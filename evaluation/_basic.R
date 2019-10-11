@@ -1,0 +1,17 @@
+library(here)
+library(jsonlite)
+library(compiler)
+library(CEGO)
+library(BayesFactor)
+library(BEST)
+library(tidyverse)
+library(furrr)
+library(cowplot)
+library(viridis)
+library(lubridate)
+here <- here::here
+
+source(here("_helper.R"))
+source(here("_landscape.R"))
+source(here("_simulation.R"))
+setCompilerOptions(optimize = 3)

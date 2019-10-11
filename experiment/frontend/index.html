@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exploring Landscapes Alone</title>
+    <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" -->
+</head>
+
+<body id="body">
+<div class="container-fluid">
+    <div class="page-header" id="header">
+    </div>
+    <div class="row">
+        <div class="col-md-3" id="textbar">
+            <span id="textfield">Willkommen<br> Bitte gib dein Alter und Geschlecht ein.
+
+                <form>Alter:<br><input type="number" id="age" min="18" max="111" required><br>
+                    Geschlecht:
+                    <input type="radio" name="gender" value="female"> weiblich
+                    <input type="radio" name="gender" value="male"> männlich
+                    <input type="radio" name="gender" value="other"> divers
+                    <input type="radio" name="gender" value="dnt"> keine Antwort <br>
+                </form>
+         </span>
+            <div id="buttonarea">
+                <button id="trainingButton" class="btn" onclick="trainingButton()">Weiter</button>
+            </div>
+        </div>
+        <div class="col-md-9" id="game">
+            <div class="alert alert-info" id="message"> </div>
+            <button id = "back" class="btn btn-info" onclick="revert()">Zurück</button>
+            <br>
+            <div class="btn-group btn-group-xs" id="position_viz">
+            <button class="btn" onclick="lightBulbFunction(0)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(1)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(2)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(3)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(4)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(5)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(6)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(7)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(8)">Click me</button>
+            <button class="btn" onclick="lightBulbFunction(9)">Click me</button>
+        </div>
+            <br>
+            <button class="btn btn-danger" onclick="skipRestOfLevel()">Nächstes Level</button>
+        </div>
+        <div class="col-md-2 well well-sm" id="sidebar">
+            <table id="sidebarTable" cellspacing='0' class='text'>
+                <tr id="currentPointLine">
+                    <td></td><td><span id=currentPoint>0</span> Punkte</td>
+                </tr>
+                <tr id="stepLine">
+                    <td>Noch </td>
+                    <td><span id="step">0</span> aus <span id="stepTotal">100</span> Zügen</td>
+                </tr>
+                <tr id="levelLine">
+                    <td>Level </td>
+                    <td><span id="level">0</span> aus <span id="levelTotal">128</span></td>
+                </tr>
+                <tr id="totalPointLine">
+                    <td>Insgesamt&ensp;</td><td><span id="totalPoint">0</span> Punkte</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/index.js" charset="UTF-8" pageEncoding="UTF-8"></script>
+<script src="js/text.js" charset="UTF-8" pageEncoding="UTF-8"></script>
+<script src="js/game.js" charset="UTF-8" pageEncoding="UTF-8"></script>
+
+</body>
+</html>
